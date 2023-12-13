@@ -1,16 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, SafeAreaView } from 'react-native';
+import {
+  StyleSheet,
+  SafeAreaView,
+  Button,
+  StatusBar,
+  Platform,
+} from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Let's start at the very beginning!</Text>
-      <Image
-        source={{
-          width: 200,
-          height: 300,
-          uri: 'https://picsum.photos/200/300',
-        }}
+      <Button
+        color="teal"
+        title="Tap Me Here"
+        onPress={() => console.log('You tapped me.')}
       />
     </SafeAreaView>
   );
@@ -20,7 +22,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent: 'center',
-    alignItems: 'center',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
 });
