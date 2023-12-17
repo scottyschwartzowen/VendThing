@@ -2,7 +2,7 @@ import React from 'react';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 import { Text, View } from 'react-native';
-
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import AppText from './app/components/AppText';
 
@@ -15,7 +15,7 @@ export default function App() {
         alignItems: 'center',
       }}
     >
-      <AppText>I love Jonas!! He is the kindest, funniest, smartest, strongest husband i have ever known!</AppText>
+      <MaterialCommunityIcons name="email" size={60} color="#16BAAF" />
     </View>
   );
 }
