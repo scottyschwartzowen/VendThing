@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+
 import AppButton from '../components/AppButton';
 
 function WelcomeScreen(props) {
@@ -38,12 +39,13 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     position: 'absolute',
-    top: 70,
+    top: 80,
     alignItems: 'center',
   },
   tagline: {
     fontSize: 26,
-    fontWeight: '600',
+    fontFamily: 'Avenir',
+    fontWeight: '800',
     paddingVertical: 20,
   },
 });
