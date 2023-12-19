@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   price: {
     color: colors.primary,
     fontWeight: 'bold',
-    fontSize: 22,
+    fontSize: 20,
     marginVertical: 10,
   },
   title: {
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
   userContainer: {
-    marginVertical: 40,
+    marginVertical: 45,
   },
 });
 
