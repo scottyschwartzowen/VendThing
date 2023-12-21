@@ -32,10 +32,11 @@ const styles = StyleSheet.create({
   },
   subTitle: {
     color: colors.primary,
-    fontWeight: '900',
+    fontWeight: '600',
   },
   title: {
     marginBottom: 7,
+    fontWeight: '800'
   },
 });
 
