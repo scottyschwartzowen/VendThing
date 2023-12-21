@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   logo: {
-    width: 95,
-    height: 95,
+    width: 80,
+    height: 80,
     borderRadius: 25,
   },
   logoContainer: {
