@@ -11,14 +11,16 @@ import {
 const initialMessages = [
   {
     id: 1,
-    title: 'T1',
-    description: 'D1',
+    title: 'Scotty Schwartz-Owen',
+    description:
+      'Hey! Is that red jacket still available? And is it lined on the inside?',
     image: require('../assets/scotty.jpg'),
   },
   {
     id: 2,
-    title: 'T2',
-    description: 'D2',
+    title: 'Scotty Schwartz-Owen',
+    description:
+      'How worn is the sofa? Do you have any close up pics of the fabric you cna share?',
     image: require('../assets/scotty.jpg'),
   },
 ];
