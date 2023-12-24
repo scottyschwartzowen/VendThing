@@ -19,31 +19,41 @@ const validationSchema = Yup.object().shape({
 });
 
 const categories = [
-  { label: 'Furniture', value: 1, backgroundColor: 'red', icon: 'apps' },
+  { label: 'Automotive', value: 1, backgroundColor: '#fc5c65', icon: 'car' },
   {
-    label: 'Clothing, Shoes & Jewelry',
+    label: 'Beauty & Health',
     value: 2,
-    backgroundColor: 'orange',
-    icon: 'email',
+    backgroundColor: '#fd9644',
+    icon: 'brush',
   },
-  { label: 'Electronics', value: 3, backgroundColor: 'gold', icon: 'apps' },
+  { label: 'Books', value: 3, backgroundColor: '#fed330', icon: 'book' },
   {
-    label: 'Sports Equipment',
+    label: 'Electronics',
     value: 4,
-    backgroundColor: 'green',
-    icon: 'email',
+    backgroundColor: '#26de81',
+    icon: 'camera',
   },
-  { label: 'Home Goods', value: 5, backgroundColor: 'blue', icon: 'apps' },
+  { label: 'Games', value: 5, backgroundColor: '#2bcbba', icon: 'cards' },
   {
-    label: 'Plants & Outdoors',
+    label: 'Home Goods',
     value: 6,
-    backgroundColor: 'indigo',
-    icon: 'email',
+    backgroundColor: '#45aaf2',
+    icon: 'floor-lamp',
   },
-  { label: 'Pet Supplies', value: 7, backgroundColor: 'violet', icon: 'apps' },
-  { label: 'Books', value: 8, backgroundColor: 'dodgerblue', icon: 'email' },
-  { label: 'Beauty & Health', value: 9, backgroundColor: 'teal', icon: 'apps' },
-  { label: 'Automotive', value: 10, backgroundColor: 'silver', icon: 'email' },
+  { label: 'Pet Supplies', value: 7, backgroundColor: '#4b7bec', icon: 'cat' },
+  { label: 'Plants', value: 8, backgroundColor: '#dc4c10', icon: 'flower' },
+  {
+    label: 'Movies & Music',
+    value: 9,
+    backgroundColor: '#008080',
+    icon: 'headphones',
+  },
+  {
+    label: 'Sporting Equipment',
+    value: 10,
+    backgroundColor: '#BCAFCF',
+    icon: 'tennis',
+  },
 ];
 
 function ListingEditScreen() {
@@ -70,6 +80,7 @@ function ListingEditScreen() {
         <AppFormPicker
           items={categories}
           name="category"
+          numberOfColumns={2}
           PickerItemComponent={CategoryPickerItem}
           placeholder="Category"
           width="50%"
