@@ -37,7 +37,7 @@ const categories = [
   {
     label: 'Home Goods',
     value: 6,
-    backgroundColor: '#45aaf2',
+    backgroundColor: '#45daf2',
     icon: 'floor-lamp',
   },
   { label: 'Pet Supplies', value: 7, backgroundColor: '#4b7bec', icon: 'cat' },
