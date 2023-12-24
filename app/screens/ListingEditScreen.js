@@ -9,6 +9,7 @@ import {
   SubmitButton,
 } from '../components/forms';
 import Screen from '../components/Screen';
+import CategoryPickerItem from '../components/CategoryPickerItem';
 
 const validationSchema = Yup.object().shape({
   title: Yup.string().required().min(1).label('Title'),
@@ -18,16 +19,31 @@ const validationSchema = Yup.object().shape({
 });
 
 const categories = [
-  { label: 'Furniture', value: 1 },
-  { label: 'Clothing, Shoes & Jewelry', value: 2 },
-  { label: 'Electronics', value: 3 },
-  { label: 'Sports Equipment', value: 4 },
-  { label: 'Home Goods', value: 5 },
-  { label: 'Plants & Outdoors', value: 6 },
-  { label: 'Pet Supplies', value: 7 },
-  { label: 'Books', value: 8 },
-  { label: 'Beauty & Health', value: 9 },
-  { label: 'Automotive', value: 10 },
+  { label: 'Furniture', value: 1, backgroundColor: 'red', icon: 'apps' },
+  {
+    label: 'Clothing, Shoes & Jewelry',
+    value: 2,
+    backgroundColor: 'orange',
+    icon: 'email',
+  },
+  { label: 'Electronics', value: 3, backgroundColor: 'gold', icon: 'apps' },
+  {
+    label: 'Sports Equipment',
+    value: 4,
+    backgroundColor: 'green',
+    icon: 'email',
+  },
+  { label: 'Home Goods', value: 5, backgroundColor: 'blue', icon: 'apps' },
+  {
+    label: 'Plants & Outdoors',
+    value: 6,
+    backgroundColor: 'indigo',
+    icon: 'email',
+  },
+  { label: 'Pet Supplies', value: 7, backgroundColor: 'violet', icon: 'apps' },
+  { label: 'Books', value: 8, backgroundColor: 'dodgerblue', icon: 'email' },
+  { label: 'Beauty & Health', value: 9, backgroundColor: 'teal', icon: 'apps' },
+  { label: 'Automotive', value: 10, backgroundColor: 'silver', icon: 'email' },
 ];
 
 function ListingEditScreen() {
@@ -54,6 +70,7 @@ function ListingEditScreen() {
         <AppFormPicker
           items={categories}
           name="category"
+          PickerItemComponent={CategoryPickerItem}
           placeholder="Category"
           width="50%"
         />

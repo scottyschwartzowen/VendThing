@@ -1,4 +1,4 @@
 {
   "exclude": ["node_modules"]
 }
-// This is to ensure VS Code treats this project as a JS project, rather than as default TS. This command tells Intellisense to exclude this folder. If any auto-import extensions are installed, makes sure to uninstall them because VS Code now has this feature built-in.
+// This is to ensure VS Code treats this project as a JS development project, rather than as default TS. This command tells Intellisense to exclude this folder. If any auto-import extensions are installed, makes sure to uninstall them because VS Code now has this feature built-in.
