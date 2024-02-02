@@ -13,6 +13,7 @@ import ListingsScreen from './app/screens/ListingsScreen';
 import ListingEditScreen from './app/screens/ListingEditScreen';
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 import AccountScreen from './app/screens/AccountScreen';
+import ImageInput from './app/components/ImageInput';
 
 export default function App() {
   const [imageUri, setImageUri] = useState();
@@ -40,6 +41,7 @@ export default function App() {
     <Screen>
       <Button title="Select Image" onPress={selectImage} />
       <Image source={{ uri: imageUri }} style={{ height: 200, width: 200 }} />
+      <ImageInput imageUri={imageUri} />
     </Screen>
   );
 }
