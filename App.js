@@ -14,9 +14,11 @@ import ListingEditScreen from './app/screens/ListingEditScreen';
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 import AccountScreen from './app/screens/AccountScreen';
 import ImageInput from './app/components/ImageInput';
+import ImageInputList from './app/components/ImageInputList';
 
 export default function App() {
   const [imageUri, setImageUri] = useState();
+  const [imageUris, setImageUris] = useState([]);
 
   const requestPermission = async () => {
     const { granted } = await ImagePicker.requestMediaLibraryPermissionsAsync();
@@ -37,13 +39,20 @@ export default function App() {
     }
   };
 
+  const handleAdd = (uri) => {
+    setImageUris([...imageUris, uri]);
+  };
+
+  const handleRemove = (uri) => {
+    setImageUris(imageUris.filter((imageUri) => imageUri !== uri));
+  };
+
   return (
     <Screen>
-      {/* <Button title="Select Image" onPress={selectImage} />
-      <Image source={{ uri: imageUri }} style={{ height: 200, width: 200 }} /> */}
-      <ImageInput
-        imageUri={imageUri}
-        onChangeImage={(uri) => setImageUri(uri)}
+      <ImageInputList
+        imageUris={imageUris}
+        onAddImage={handleAdd}
+        onRemoveImage={handleRemove}
       />
     </Screen>
   );
