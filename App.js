@@ -48,12 +48,6 @@ export default function App() {
   };
 
   return (
-    <Screen>
-      <ImageInputList
-        imageUris={imageUris}
-        onAddImage={handleAdd}
-        onRemoveImage={handleRemove}
-      />
-    </Screen>
+    <ListingEditScreen />
   );
 }
