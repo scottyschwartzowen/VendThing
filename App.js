@@ -73,7 +73,7 @@ const Account = () => (
 const Tab = createBottomTabNavigator();
 const TabNavigator = () => (
   <Tab.Navigator
-    screenOptions={{
+    screenOptions={{ // tabBarOptions deprecated
       tabBarActiveBackgroundColor: 'tomato',
       tabBarActiveTintColor: 'white',
       tabBarInactiveBackgroundColor: '#eee',
