@@ -20,6 +20,7 @@ import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 import AccountScreen from './app/screens/AccountScreen';
 import ImageInput from './app/components/ImageInput';
 import ImageInputList from './app/components/ImageInputList';
+import AuthNavigator from './app/navigation/AuthNavigator';
 
 const Tweets = ({ navigation }) => (
   <Screen>
@@ -72,23 +73,8 @@ const Account = () => (
 
 const Tab = createBottomTabNavigator();
 const TabNavigator = () => (
-  <Tab.Navigator
-    screenOptions={{ // tabBarOptions deprecated
-      tabBarActiveBackgroundColor: 'tomato',
-      tabBarActiveTintColor: 'white',
-      tabBarInactiveBackgroundColor: '#eee',
-      tabBarInactiveTintColor: 'black',
-    }}
-  >
-    <Tab.Screen
-      name="Feed"
-      component={Tweets}
-      options={{
-        tabBarIcon: ({ size, color }) => (
-          <MaterialCommunityIcons name="home" size={size} color={color} />
-        ),
-      }}
-    />
+  <Tab.Navigator>
+    <Tab.Screen name="Feed" component={StackNavigator} />
     <Tab.Screen name="Account" component={Account} />
   </Tab.Navigator>
 );
@@ -126,7 +112,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <TabNavigator />
+      <AuthNavigator />
     </NavigationContainer>
   );
 }
