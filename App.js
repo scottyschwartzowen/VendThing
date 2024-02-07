@@ -21,6 +21,8 @@ import AccountScreen from './app/screens/AccountScreen';
 import ImageInput from './app/components/ImageInput';
 import ImageInputList from './app/components/ImageInputList';
 import AuthNavigator from './app/navigation/AuthNavigator';
+import navigationTheme from './app/navigation/navigationTheme';
+import AppNavigator from './app/navigation/AppNavigator';
 
 const Tweets = ({ navigation }) => (
   <Screen>
@@ -111,8 +113,8 @@ export default function App() {
   // };
 
   return (
-    <NavigationContainer>
-      <AuthNavigator />
+    <NavigationContainer theme={navigationTheme}>
+      <AppNavigator />
     </NavigationContainer>
   );
 }
