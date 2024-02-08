@@ -18,7 +18,7 @@ const menuItems = [
     title: 'My Messages',
     icon: {
       name: 'email',
-      backgroundColor: colors.secondary,
+      backgroundColor: '#ffe66d',
     },
     targetScreen: 'Messages',
   },
@@ -55,7 +55,9 @@ function AccountScreen({ navigation }) {
       </View>
       <ListItem
         title="Log Out"
-        IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}
+        IconComponent={
+          <Icon name="logout" backgroundColor={colors.secondary} />
+        }
       />
     </Screen>
   );
