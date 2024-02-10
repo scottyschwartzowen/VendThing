@@ -6,6 +6,7 @@ import ListingEditScreen from '../screens/ListingEditScreen';
 import FeedNavigator from './FeedNavigator';
 import AccountNavigator from './AccountNavigator';
 import NewListingButton from './NewListingButton';
+import routes from '../navigation/routes';
 
 const Tab = createBottomTabNavigator();
 
@@ -15,6 +16,7 @@ const AppNavigator = () => (
       name="Feed"
       component={FeedNavigator}
       options={{
+        headerShown: false,
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="home" color={color} size={size} />
         ),
@@ -24,9 +26,10 @@ const AppNavigator = () => (
       name="ListingEdit"
       component={ListingEditScreen}
       options={({ navigation }) => ({
+        headerShown: false,
         tabBarButton: () => (
           <NewListingButton
-            onPress={() => navigation.navigate('ListingEdit')}
+            onPress={() => navigation.navigate(routes.LISTING_EDIT)}
           />
         ),
         tabBarIcon: ({ color, size }) => (
@@ -42,6 +45,7 @@ const AppNavigator = () => (
       name="Account"
       component={AccountNavigator}
       options={{
+        headerShown: false,
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="account" color={color} size={size} />
         ),
