@@ -1,10 +1,8 @@
-![img](app/assets/logo.jpg)
+# VendThing: Sell Anything Community App
 
 ![img](app/assets/screens.jpg)
 
-![img](app/assets/messages.jpg)
-
-# VendThing: Sell Anything Community App - Tools Used:
+# Tools Used:
 
 - Created with React Native, coded 100% in JS / React Native
 
@@ -25,8 +23,12 @@
 
 - Post items with local image picker, category sheet selector
 
-- Current building: 
-  Async store and cache layer with Redux
-  Authentication flow and persistence
-  Push notification server server services
-  Over-the-air updates capabilities 
+- Currently building: 
+  Async store and cache layer with Redux,
+  authentication flow and persistence,
+  push notification server server services,
+  over-the-air updates capabilities 
+
+![img](app/assets/logo.jpg)
+
+![img](app/assets/messages.jpg)
