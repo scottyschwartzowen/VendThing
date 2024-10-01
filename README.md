@@ -1,8 +1,8 @@
-![img](src/assets/logo.jpg)
+![img](app/assets/logo.jpg)
 
-![![img](https://)](src/assets/screens.jpg)
+![img](app/assets/screens.jpg)
 
-![img](src/assets/messages.jpg)
+![img](app/assets/messages.jpg)
 
 # VendThing: Sell Anything Community App - Tools Used:
 
