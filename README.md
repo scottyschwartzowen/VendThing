@@ -23,12 +23,12 @@
 
 - Post items with local image picker, category sheet selector
 
-- Currently building: 
+- Currently building:
   Async store and cache layer with Redux,
   authentication flow and persistence,
   push notification server server services,
-  over-the-air updates capabilities 
+  over-the-air updates capabilities
 
 ![img](app/assets/logo.jpg)
 
-![img](app/assets/messages.jpg)
+![img](app/assets/screenshots2.jpg)
